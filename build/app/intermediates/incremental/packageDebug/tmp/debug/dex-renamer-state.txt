@@ -1,4 +1,4 @@
-#Thu May 23 23:40:26 IST 2019
-base.0=/Users/manpreetsingh/Desktop/nilesh/jester_travels-master/build/app/intermediates/transforms/dexMerger/debug/0
+#Fri May 24 22:10:47 IST 2019
+base.0=D\:\\pawan\\jester_travel\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

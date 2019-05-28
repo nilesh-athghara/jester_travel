@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -29,16 +31,74 @@ class _SecondScreenState extends State<SecondScreen> {
   String car='';
   String url='';
 
+  Timer _timer;
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
+  }
+
+  int _start = 0;
+
+  void startTimer() {
+    const oneSec = const Duration(seconds: 1);
+    _timer = new Timer.periodic(
+
+        oneSec,
+            (Timer timer) => setState(() {
+            if (_start < 1) {
+              timer.cancel();
+            } else {
+            _start = _start - 1;
+            }
+        }));
+  }
+
+  void _launchMapsUrl(double lat,
+      double lon) async {
+
+    final url =
+        'https://www.google.com/maps/search/?api=1&query=$lat,$lon';
+
+    if (await
+    canLaunch(url)) {
+
+      await launch(url);
+
+    } else {
+
+      throw 'Could not launch $url';
+
+    }
+
+  }
+
+
   @override
   void initState() {
     super.initState();
     customerId = widget.data;
     print('customer id' + widget.data.toString());
     url = 'http://www.jestertraveldemo.com/api/get-itinerary/$customerId';
-    getDataApi();
+    getDataApi().then((_){
+      startTimer();
+    });
   }
 
   String convert(int n) {
+
+    if(n == null){
+      setState(() {
+        _start = 1;
+      });
+    }
+    else{
+      setState(() {
+        _start = n;
+      });
+    }
+
     int day = int.parse(((n / (24 * 3600)).floor()).toString());
 
     n = n % (24 * 3600);
@@ -49,29 +109,29 @@ class _SecondScreenState extends State<SecondScreen> {
 
     n %= 60;
     int seconds = n;
-    return " ${day.toString()} day ${hour.toString()} hour ${minutes.toString()} minutes away ";
+    return " ${day.toString()} day ${hour.toString()} hour ${minutes.toString()} minutes away ${seconds.toString()} seconds";
   }
 
   Future<Map> getDataApi() async {
     DateTime current = DateTime.now();
-    await http.get(url).then((data) {
-      Map<String, dynamic> map = json.decode(data.body);
-      for (int i = 0; i < map['Itineraries'].length; i++) {
-        if (map['Itineraries'][i]['Status'] == 'Accepted') {
-          approvedItenary = map['Itineraries'][i];
+    await http.get(url).then((data) async {
+      Map<String, dynamic> map = await json.decode(data.body);
+        for (int i = 0; i < map['Itineraries'].length; i++) {
+          if (map['Itineraries'][i]['Status'] == 'Accepted') {
+            approvedItenary = map['Itineraries'][i];
+          }
         }
-      }
-      for (int i = 0; i < map['HotelItineraries'].length; i++) {
-        if (map['HotelItineraries'][i]['Status'] == 'Accepted') {
-          hotel = map['HotelItineraries'][i]['hotelName'];
+        for (int i = 0; i < map['HotelItineraries'].length; i++) {
+          if (map['HotelItineraries'][i]['Status'] == 'Accepted') {
+            hotel = map['HotelItineraries'][i]['hotelName'];
+          }
         }
-      }
-      for (int i = 0; i < map['CarItineraries'].length; i++) {
-        if (map['CarItineraries'][i]['Status'] == 'Accepted') {
-          car = map['CarItineraries'][i]['carName'];
+        for (int i = 0; i < map['CarItineraries'].length; i++) {
+          if (map['CarItineraries'][i]['Status'] == 'Accepted') {
+            car = map['CarItineraries'][i]['carName'];
+          }
         }
-      }
-      if(approvedItenary!=null)
+        if(approvedItenary!=null)
         {
           departureCityInfoForReturn =
           approvedItenary['ReturnFlightData'][0]['DepartureCityInfo']['name'];
@@ -106,6 +166,9 @@ class _SecondScreenState extends State<SecondScreen> {
           awayTimeForReturn =
           (beforeForReturn > 0) ? convert(beforeForReturn) : 'already passed';
         }
+
+//      print('map' + map.toString());
+
     });
 
     return {
@@ -163,6 +226,22 @@ class _SecondScreenState extends State<SecondScreen> {
                       ),
                       Text(
                           'Customer will leave on : $readableDepartureTimeForDestination  which is $awayTimeForDestination'),
+                      SizedBox(
+
+                        height: 10.0,
+
+                      ),
+
+                      InkWell(
+
+                        child: Text("Click here to go maps",style:
+                        TextStyle(color:
+                        Colors.black,fontWeight: FontWeight.bold)),
+
+                        onTap: (){_launchMapsUrl(30.7046,76.7179);},
+
+                      ),
+
                     ],
                   ),
                 SizedBox(
