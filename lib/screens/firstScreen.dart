@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
 import 'package:jester_travel/screens/secondScreen.dart';
 
 class FirstScreen extends StatefulWidget {
@@ -59,7 +57,7 @@ class _FirstScreenState extends State<FirstScreen> {
                 },
                 child: new Text("Submit",
                     style: TextStyle(fontSize: 16, color: Colors.white)),
-              )
+              ),
             ],
           ))),
     );

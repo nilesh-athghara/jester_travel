@@ -1,11 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-33:12
-MERGED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-33:12
+ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-35:12
+MERGED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-35:12
 MERGED from [:url_launcher] D:\pawan\jester_travel\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
+MERGED from [:google_maps_flutter] D:\pawan\jester_travel\build\google_maps_flutter\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\b1dcc189f2c251a86e9b0062677add71\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05affd6f9df6bfc25021f87d3a404411\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f6f29c578c8af5b14b3e911400d579fa\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\df2b6e355b3b71187dc6d3dc0c0eb454\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\29a5b5b15595c9e20098bb2ecfda4d60\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d4c2713242d618e36d937aba8c2a4b27\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3bd6054e8397ceadcd23c1eafa756988\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\caaf712a77b207736913d0bc37926271\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6debc793ec71adf85943c209c187c92e\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\803e525223fa41af4c5c4cb910ec03f7\AndroidManifest.xml:17:1-30:12
 INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -15,18 +27,40 @@ INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml:1
 		INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-35:12
 		INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:1-35:12
 		INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:9:5-32:19
+ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:9:5-34:19
 MERGED from [:url_launcher] D:\pawan\jester_travel\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-12:19
 MERGED from [:url_launcher] D:\pawan\jester_travel\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-12:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\b1dcc189f2c251a86e9b0062677add71\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\b1dcc189f2c251a86e9b0062677add71\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05affd6f9df6bfc25021f87d3a404411\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05affd6f9df6bfc25021f87d3a404411\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f6f29c578c8af5b14b3e911400d579fa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f6f29c578c8af5b14b3e911400d579fa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\df2b6e355b3b71187dc6d3dc0c0eb454\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\df2b6e355b3b71187dc6d3dc0c0eb454\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\29a5b5b15595c9e20098bb2ecfda4d60\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\29a5b5b15595c9e20098bb2ecfda4d60\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d4c2713242d618e36d937aba8c2a4b27\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d4c2713242d618e36d937aba8c2a4b27\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3bd6054e8397ceadcd23c1eafa756988\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3bd6054e8397ceadcd23c1eafa756988\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\caaf712a77b207736913d0bc37926271\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\caaf712a77b207736913d0bc37926271\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6debc793ec71adf85943c209c187c92e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6debc793ec71adf85943c209c187c92e\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\803e525223fa41af4c5c4cb910ec03f7\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\803e525223fa41af4c5c4cb910ec03f7\AndroidManifest.xml:24:5-28:19
 	android:label
 		ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:11:9-38
 	android:icon
@@ -63,14 +97,46 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:29:17-76
 	android:name
 		ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:29:27-74
+meta-data#com.google.android.geo.API_KEY
+ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:32:9-33:70
+	android:value
+		ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:33:13-68
+	android:name
+		ADDED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml:32:20-65
 uses-sdk
 INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml
 MERGED from [:url_launcher] D:\pawan\jester_travel\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] D:\pawan\jester_travel\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] D:\pawan\jester_travel\build\google_maps_flutter\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] D:\pawan\jester_travel\build\google_maps_flutter\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\b1dcc189f2c251a86e9b0062677add71\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\b1dcc189f2c251a86e9b0062677add71\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05affd6f9df6bfc25021f87d3a404411\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05affd6f9df6bfc25021f87d3a404411\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f6f29c578c8af5b14b3e911400d579fa\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f6f29c578c8af5b14b3e911400d579fa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\df2b6e355b3b71187dc6d3dc0c0eb454\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\df2b6e355b3b71187dc6d3dc0c0eb454\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\29a5b5b15595c9e20098bb2ecfda4d60\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\29a5b5b15595c9e20098bb2ecfda4d60\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d4c2713242d618e36d937aba8c2a4b27\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d4c2713242d618e36d937aba8c2a4b27\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3bd6054e8397ceadcd23c1eafa756988\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3bd6054e8397ceadcd23c1eafa756988\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\caaf712a77b207736913d0bc37926271\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\caaf712a77b207736913d0bc37926271\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6debc793ec71adf85943c209c187c92e\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6debc793ec71adf85943c209c187c92e\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\803e525223fa41af4c5c4cb910ec03f7\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\803e525223fa41af4c5c4cb910ec03f7\AndroidManifest.xml:20:5-22:41
 INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml
 INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\df2b6e355b3b71187dc6d3dc0c0eb454\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		INJECTED from D:\pawan\jester_travel\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml
@@ -79,6 +145,8 @@ INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml
 		INJECTED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml:6:5-66
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from D:\pawan\jester_travel\android\app\src\debug\AndroidManifest.xml:6:22-64
 activity#io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity
@@ -89,3 +157,55 @@ ADDED from [:url_launcher] D:\pawan\jester_travel\build\url_launcher\intermediat
 		ADDED from [:url_launcher] D:\pawan\jester_travel\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:13-71
 	android:name
 		ADDED from [:url_launcher] D:\pawan\jester_travel\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:13-92
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\f191a3eda235105ebad767a2dacb50b9\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\b1dcc189f2c251a86e9b0062677add71\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\b1dcc189f2c251a86e9b0062677add71\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\b1dcc189f2c251a86e9b0062677add71\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\b1dcc189f2c251a86e9b0062677add71\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f6f29c578c8af5b14b3e911400d579fa\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f6f29c578c8af5b14b3e911400d579fa\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f6f29c578c8af5b14b3e911400d579fa\AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\df2b6e355b3b71187dc6d3dc0c0eb454\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\29a5b5b15595c9e20098bb2ecfda4d60\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\29a5b5b15595c9e20098bb2ecfda4d60\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d4c2713242d618e36d937aba8c2a4b27\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d4c2713242d618e36d937aba8c2a4b27\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3bd6054e8397ceadcd23c1eafa756988\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3bd6054e8397ceadcd23c1eafa756988\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\caaf712a77b207736913d0bc37926271\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\caaf712a77b207736913d0bc37926271\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6debc793ec71adf85943c209c187c92e\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6debc793ec71adf85943c209c187c92e\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\df2b6e355b3b71187dc6d3dc0c0eb454\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\df2b6e355b3b71187dc6d3dc0c0eb454\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\803e525223fa41af4c5c4cb910ec03f7\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\803e525223fa41af4c5c4cb910ec03f7\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pawan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\803e525223fa41af4c5c4cb910ec03f7\AndroidManifest.xml:26:13-58

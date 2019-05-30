@@ -1,9 +1,13 @@
 import 'dart:async';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
+import 'package:jester_travel/screens/third_screen.dart';
+import 'package:google_maps_webservice/places.dart';
+
+const kGoogleApiKey = "AIzaSyAHcQw8Ot0IiWJT6r2LroR2kjadHOqQUxY";
+GoogleMapsPlaces _places = GoogleMapsPlaces(apiKey: kGoogleApiKey);
 
 class SecondScreen extends StatefulWidget {
   final String data;
@@ -13,6 +17,7 @@ class SecondScreen extends StatefulWidget {
   @override
   _SecondScreenState createState() => _SecondScreenState();
 }
+
 
 class _SecondScreenState extends State<SecondScreen> {
   String customerId='';
@@ -26,7 +31,7 @@ class _SecondScreenState extends State<SecondScreen> {
   String departureTimeForReturn='';
   String awayTimeForDestination='';
   String awayTimeForReturn='';
-  Map approvedItenary;
+  Map approvedItineraries;
   String hotel='';
   String car='';
   String url='';
@@ -38,7 +43,6 @@ class _SecondScreenState extends State<SecondScreen> {
     _timer.cancel();
     super.dispose();
   }
-
   int _start = 0;
 
   void startTimer() {
@@ -55,35 +59,41 @@ class _SecondScreenState extends State<SecondScreen> {
         }));
   }
 
-  void _launchMapsUrl(double lat,
-      double lon) async {
-
-    final url =
-        'https://www.google.com/maps/search/?api=1&query=$lat,$lon';
-
-    if (await
-    canLaunch(url)) {
-
-      await launch(url);
-
-    } else {
-
-      throw 'Could not launch $url';
-
-    }
-
-  }
-
 
   @override
   void initState() {
     super.initState();
     customerId = widget.data;
     print('customer id' + widget.data.toString());
-    url = 'http://www.jestertraveldemo.com/api/get-itinerary/$customerId';
+      url = 'http://www.jestertraveldemo.com/api/get-itinerary/$customerId';
     getDataApi().then((_){
       startTimer();
     });
+  }
+
+
+  Future<Null> getLatitudeLongitude(String placeName) async {
+    if (placeName != null) {
+
+      PlacesSearchResponse details = await _places.searchByText(placeName);
+      PlacesSearchResult d = details.results.first;
+
+      final lat = d.geometry.location.lat;
+      final lng = d.geometry.location.lng;
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => ThirdScreen(
+              latitude: lat,
+              longitude: lng,
+              placeName: d.name,
+            )),
+      );
+    }
+    else{
+      print("No name of a place is found.");
+    }
   }
 
   String convert(int n) {
@@ -118,7 +128,7 @@ class _SecondScreenState extends State<SecondScreen> {
       Map<String, dynamic> map = await json.decode(data.body);
         for (int i = 0; i < map['Itineraries'].length; i++) {
           if (map['Itineraries'][i]['Status'] == 'Accepted') {
-            approvedItenary = map['Itineraries'][i];
+            approvedItineraries = map['Itineraries'][i];
           }
         }
         for (int i = 0; i < map['HotelItineraries'].length; i++) {
@@ -131,28 +141,28 @@ class _SecondScreenState extends State<SecondScreen> {
             car = map['CarItineraries'][i]['carName'];
           }
         }
-        if(approvedItenary!=null)
+        if(approvedItineraries!=null)
         {
           departureCityInfoForReturn =
-          approvedItenary['ReturnFlightData'][0]['DepartureCityInfo']['name'];
-          departureAirportInfoForReturn = approvedItenary['ReturnFlightData'][0]
+          approvedItineraries['ReturnFlightData'][0]['DepartureCityInfo']['name'];
+          departureAirportInfoForReturn = approvedItineraries['ReturnFlightData'][0]
           ['DepartureAirportInfo']['code'];
-          departureCityInfoForDestination = approvedItenary['DestinationFlightData']
+          departureCityInfoForDestination = approvedItineraries['DestinationFlightData']
           [0]['DepartureCityInfo']['name'];
           departureAirportInfoForDestination =
-          approvedItenary['DestinationFlightData'][0]['DepartureAirportInfo']
+          approvedItineraries['DestinationFlightData'][0]['DepartureAirportInfo']
           ['code'];
           departureTimeForReturn =
-          approvedItenary['ReturnFlightData'][0]['DateOfTakeoff'];
+          approvedItineraries['ReturnFlightData'][0]['DateOfTakeoff'];
           departureTimeForDestination =
-          approvedItenary['DestinationFlightData'][0]['DateOfTakeoff'];
+          approvedItineraries['DestinationFlightData'][0]['DateOfTakeoff'];
           readableDepartureTimeForDestination = DateFormat.yMMMMd("en_US")
               .add_jm()
               .format(DateTime.parse(
-              approvedItenary['DestinationFlightData'][0]['DateOfTakeoff']));
+              approvedItineraries['DestinationFlightData'][0]['DateOfTakeoff']));
           readableDepartureTimeForReturn = DateFormat.yMMMMd("en_US").format(
               DateTime.parse(
-                  approvedItenary['ReturnFlightData'][0]['DateOfTakeoff']));
+                  approvedItineraries['ReturnFlightData'][0]['DateOfTakeoff']));
           int beforeForDestination =
               (DateTime.parse("$departureTimeForDestination"))
                   .difference(current)
@@ -234,11 +244,13 @@ class _SecondScreenState extends State<SecondScreen> {
 
                       InkWell(
 
-                        child: Text("Click here to go maps",style:
+                        child: Text("Location On Map",style:
                         TextStyle(color:
                         Colors.black,fontWeight: FontWeight.bold)),
 
-                        onTap: (){_launchMapsUrl(30.7046,76.7179);},
+                        onTap: (){
+                          getLatitudeLongitude(departureAirportInfoForDestination);
+                          },
 
                       ),
 
@@ -302,6 +314,21 @@ class _SecondScreenState extends State<SecondScreen> {
                         'Customer will leave on :$readableDepartureTimeForReturn which is $awayTimeForReturn'),
                     SizedBox(
                       height: 10.0,
+                    ),
+                    InkWell(
+
+                      child: Text("Location On Map",style:
+                      TextStyle(color:
+                      Colors.black,fontWeight: FontWeight.bold)),
+
+                      onTap: (){
+                        getLatitudeLongitude(departureAirportInfoForReturn);
+                      },
+
+                    ),
+
+                    SizedBox(
+                      height: 20.0,
                     ),
                   ],
                 )
